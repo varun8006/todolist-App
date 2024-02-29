@@ -1,0 +1,101 @@
+/* Reset default styles and set font-family */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px; /* Limit container width for better readability */
+    margin: 20px auto 0; /* Center container horizontally and add margin-top */
+}
+
+
+.inputtask input {
+    width: 100%; /* Use full width of container */
+    max-width: 400px; /* Limit input field width */
+    padding: 10px;
+    margin-bottom: 10px; /* Add spacing between input field and button */
+    outline: none;
+    border: 1px solid  rgb(67, 67, 67); /* Add border for better visual separation */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+}
+
+.inputtask button {
+    width: 100%; /* Use full width of container */
+    max-width: 400px; /* Limit button width */
+    padding: 10px;
+    background-color: rgb(111, 111, 255);
+    color: #fff; /* Set text color to white */
+    border: none;
+    border-radius: 5px; /* Add border-radius for rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.inputtask button:hover {
+    background-color: rgb(74, 74, 209); /* Darken background color on hover */
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 531px; /* Limit task width */
+    height: 60px;
+    justify-content: space-between;
+    background-color: rgb(211, 255, 189);
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px; /* Add border-radius for rounded corners */
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox .icon {
+    margin-right: 10px;
+    font-size: 26px;
+    color: #333; /* Set icon color */
+}
+
+.task div span {
+    margin: 0px 5px; /* Remove right margin */
+}
+
+.task div .icon {
+    cursor: pointer;
+    color: #888; /* Set icon color */
+    transition: color 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.task div .icon:hover {
+    color: #555; /* Darken icon color on hover */
+}
+
+.line_through {
+    text-decoration: line-through;
+}
+
+.icon_delete {
+    cursor: pointer;
+    color: rgb(255, 51, 51); /* Set delete icon color */
+    transition: color 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.icon_delete:hover {
+    color: #c00; /* Darken delete icon color on hover */
+}
+.error-message{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
